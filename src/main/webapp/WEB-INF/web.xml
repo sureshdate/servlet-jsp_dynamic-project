@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>01-Servlet-App-SrvletInt</display-name>
+  
+  <!-- this is for com.servlet package -->
+  <servlet>
+  <servlet-name>First</servlet-name>
+  <servlet-class>com.servlets.First_Program</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>First</servlet-name>
+   <url-pattern>/app</url-pattern>
+  </servlet-mapping>
+  
+   <!-- this is for com.practice.httpServlet package -->
+  <servlet>
+  <servlet-name>second</servlet-name>
+  <servlet-class>com.practice.httpServlet.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>second</servlet-name>
+   <url-pattern>/second1</url-pattern>
+  </servlet-mapping>
+  
+   <!-- this is for com.servlet.register.app package -->
+   <servlet>
+   <servlet-name>register</servlet-name>
+   <servlet-class>com.servlet.register.app.RegisterServlet</servlet-class>
+   </servlet>
+    
+    <servlet-mapping>
+   <servlet-name>register</servlet-name>
+   <url-pattern>/RegisterServlet</url-pattern>
+   </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>success</servlet-name>
+   <servlet-class>com.servlet.register.app.SuccessServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>success</servlet-name>
+   <url-pattern>/success</url-pattern>
+   </servlet-mapping>
+   
+  
+  
+ <!-- //html file alwayes create under webapp  -->
+  <welcome-file-list>
+    <welcome-file>Home.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>

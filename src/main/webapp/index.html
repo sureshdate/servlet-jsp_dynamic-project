@@ -1,0 +1,102 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Home Page</h1>
+<a href="app">Click here: Go to servlet</a>
+</body>
+</html> //this is for com.servlets -->
+
+
+<!-- this is for com.servlet.register.app-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Form Page</title>
+
+	<style>
+		.container {
+			width:30%;
+			border:1px solid red;
+			margin:auto;
+			padding:20px;
+			font-size:20px;
+		}
+		#myform table tr td input{
+			font-size:20px;
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>My Form</h1>
+		<form  id="myform" action="RegisterServlet" method="post">
+			<table>
+				<tr>
+					<td>Enter your name :</td>
+					<td><input type="text" name="user_name" placeholder="enetr name" /></td>
+				</tr>
+
+
+				<tr>
+					<td>Enter your password :</td>
+					<td><input type="password" name="user_password" placeholder="enetr password" /></td>
+				</tr>
+
+				<tr>
+					<td>Enter your email :</td>
+					<td><input type="email" name="user_email" placeholder="enetr email" /></td>
+				</tr>
+
+				<tr>
+					<td>select gender :</td>
+					<td><input type="radio" name="user_gender" value="male" />Male
+						<input type="radio" name="user_gender" value="female" />female
+					</td>
+				</tr>
+				<td>Select your course :</td>
+
+				<td>
+					<select name="user_course">
+						<option value="java"">Java</option>
+							<option value=" php">php</option>
+						<option value="python">python</option>
+						<option value="dotnet">dotnet</option>
+					</select>
+				</td>
+				</tr>
+
+				<tr>
+					<td style="text-align: right;">
+						<input type="checkbox" value="checked" name="condition" />
+					<td>
+						Agree terms and condition
+					</td>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+
+					</td>
+					<td>
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+					</td>
+				</tr>
+			</table>
+
+		</form>
+	</div>
+</body>
+
+</html>
